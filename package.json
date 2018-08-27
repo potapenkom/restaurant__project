@@ -1,7 +1,7 @@
 {
   "name": "gulp-boilerplate",
   "version": "0.0.1",
-  "description": "\"QuickStart project\"",
+  "description": "QuickStart project",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
@@ -60,6 +60,7 @@
     "merge-stream": "^1.0.1",
     "mongodb": "^3.1.4",
     "postcss-cli": "^6.0.0",
+    "require-dir": "^1.0.0",
     "vinyl-buffer": "^1.0.1"
   }
 }
