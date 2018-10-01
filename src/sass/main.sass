@@ -30,6 +30,13 @@ h3
     text-align: center
     line-height: 1.333
 
+h4 
+    font-size: 16px
+    font-family: garamond
+    text-transform: uppercase
+    line-height: 1.5
+    text-align: left
+
 .main__titles
     border: 1px solid #ffdf78    
     background-color: #31241d
@@ -38,8 +45,9 @@ h3
 
 .container
     max-width: 1000px 
-    margin: 0 auto   
+    margin: 0 auto  
 
+/*Section HEADER*/
 .header
     background-color: #31241d
     border-top: 1px solid #ffdf78    
@@ -70,7 +78,7 @@ h3
         justify-content: center
         align-items: center
 
-.header__titie, .header__link, .header__icon
+.header__title, .header__link, .header__icon
     display: inline-block 
     font-family: garamond
     font-size: 16px
@@ -79,7 +87,7 @@ h3
 
 .header__titie
     margin: 0 0 0 45px
-    @media screen and (max-width: 830px)
+    @media screen and (max-width: 935px)
         margin: 0px 0 5px 0
 
 .nav
@@ -114,15 +122,19 @@ h3
     @media screen and (max-width: 400px)
         margin: 0 auto
         padding: 0 3px 0 3px
+        /*Section HEADER ends*/
 
+/*Section WELCOME*/
 .welcome__slide
     position: relative
 
 .welcome__content
     position: absolute
     top: 45.5%
-    right: 19%
-    width: 27.9%    
+    right: 13%
+    max-width: 455px
+    @media screen and (max-width: 920px)
+        right: 0
 
 .welcome__title-second
     padding: 11px 0 41px 0
@@ -160,6 +172,9 @@ h3
 .owl-carousel button.owl-dot:hover  
     background: #584134  
 
+    /*Section WELCOME ends*/
+
+/*Section ABOUT*/
 .about
     background-size: cover
     padding: 77px 0 60px 0
@@ -200,15 +215,298 @@ h3
     font-family: garamond
     color: #ffffff
     line-height: 1.625
-           
+
+    /*Section ABOUT ends*/
+
+/*Section MENU*/  
 .menu
     background-size: cover
+
+.menu__wrap
+    padding: 80px 0 0 0  
+
+.menu__titles
+    position: relative
+    border-top: 1px solid #fcdb75
+
+.menu .main__titles
+    position: absolute
+    right: 43%
+    top: -19%
+    padding: 7px 38px 6px
 
 .menu__slide
     display: flex
     justify-content: space-between
     flex-flow: row wrap
+    padding: 34px 0 40px !important
+
+.menu__title
+    padding: 38px 0px 28px 0 
+    position: relative 
+    &::after
+        content: ''
+        display: block
+        border-bottom: 1px solid  #ffdf78
+        position: absolute
+        max-width: 126px
+        width: 100%
+        right: 43.5%
+        top: 99%
+  
+.menu__titles h2 
+    text-align: center
+
+.menu__slide
+    padding: 34px 0 0 0
 
 .menu__card
     display: flex  
-    width: 50%  
+    justify-content: space-between
+    width: 49%  
+    padding: 0 0 17px 0
+    
+.owl-carousel .owl-item img
+    width: auto    
+
+.menu__description
+    background-color: #31241d 
+    border: 1px solid  #ffdf78
+    padding: 0 0 0 17px
+
+.menu__caption
+    padding: 20px 0px 24px
+    position: relative 
+    &::after
+        content: ''
+        display: block
+        border-bottom: 1px solid  #ffdf78
+        position: absolute
+        bottom: 10px
+        width: 100%
+        max-width: 213px
+
+.menu__texts
+    padding: 0 0 30px 0        
+
+.menu__text
+  font-size: 16px
+  font-family: garamond
+  color: #ffffff
+  line-height: 1.5
+  text-align: left
+
+.menu__links
+    text-align: right
+    padding: 0px 19px 0 0px
+
+.menu__link
+    font-size: 18px
+    font-family: rosa
+    line-height: 1.2
+
+.menu__item
+    font-size: 13px  
+
+.owl-carousel .owl-nav button.owl-prev
+    position: absolute
+    top: -10%
+    right: 98%
+    font-size: 33px
+
+.owl-carousel .owl-nav button.owl-next
+    position: absolute
+    left: 98.2%
+    top: -10.2%
+    font-size: 33px  
+
+    /*Section MENU ends*/
+
+/*Section NEWS*/  
+.news
+    background-size: cover
+
+.news__wrap
+    padding: 85px 0 0 0
+
+.new__titles
+    position: relative
+    border-top: 1px solid #ffdf78    
+
+.news__wrap .main__titles
+    padding: 7px 25px 6px
+    position: absolute
+    right: 43%
+    top: -20%
+    
+.new__title
+    padding: 38px 7px 28px 0
+    position: relative
+    &::after
+        content: ''
+        display: block
+        border-bottom: 1px solid  #ffdf78
+        position: absolute
+        width: 100%
+        max-width: 127px
+        right: 43.5%
+        bottom: 0
+
+.new__title  h2 
+    text-align: center  
+
+.news__card
+    padding: 34px 0 60px 0
+
+.news .owl-carousel .owl-nav button.owl-prev 
+    position: absolute
+    right: 98%
+    top: -13%
+
+.news .owl-carousel .owl-nav button.owl-next 
+    left: 98%
+    position: absolute
+    top: -13%
+    
+.news__content
+    position: relative
+    background-color: #fff    
+    color: #141d31
+    padding: 21px 0 0 12px
+    width: 87%
+
+.news__content h3 
+  font-size: 12px
+  font-family: garamond
+  line-height: 1.2
+  text-align: center
+  text-transform: capitalize 
+  color:  #ffdf78
+    
+.news__content .main__titles
+    position: absolute   
+    top: -8%
+    right: 26%
+    padding: 5px 8px 5px 11px
+
+.news__title
+  font-size: 16px
+  font-family: garamond
+  font-weight: bold
+  text-transform: uppercase
+  line-height: 1.375
+  text-align: left
+
+.news__text
+    font-size: 16px
+    font-family: garamond    
+    text-align: left
+    line-height: 1.375
+
+.news__linhs
+    text-align: right
+    padding: 0 12px 19px 0
+
+.news .menu__link
+    font-size: 17.211px
+    font-family: rosa
+    color:  #141d31
+    line-height: 1.162
+
+    /*Section MENU ends*/
+                
+/*Section CONTACTS*/  
+.contacts 
+    position: relative
+    border-bottom: 1px solid #fcdb75
+
+.contacts__map
+    width: 100%
+    max-width: 1600px
+    height: 460px
+
+.contacts__contact
+    border: 1px solid #fcdb75
+    background-color: #564c46  
+    opacity: 0.8
+    width: 100%
+    max-width: 364px
+    z-index: 1
+    position: absolute
+    top: 17%
+    right: 10%
+
+.contacts__contact .main__titles
+    position: absolute
+    right: 24%
+    top: -7%
+    padding: 8px 40px 6px 40px
+
+.contacts__wrapper
+    font-size: 16px
+    font-family: garamond
+    color: #ffffff
+    line-height: 1.25
+    padding: 68px 0px 42px 79px 
+
+
+.contacts__wrap 
+    display: flex
+    align-items: flex-start  
+    padding: 0 0 19px 0
+
+.contacts__adress
+    font-size: 16px
+    font-family: garamond
+    line-height: 1.25
+    color: #ffffff
+    .contacts__adress:hover   
+        color: #fcdb75
+
+.contacts__icon
+    padding: 0 21px 0 0px
+
+    /*Section CONTACTS ends*/
+
+/*Section FOOTER*/ 
+
+.footer
+    background-color: #31241d
+    border-top: 11px solid #fff
+    border-bottom: 2px solid #ffdf78
+    border-left: 10px solid #ffffff
+    padding: 6px 0 0 0 
+
+.footer__wrap  
+    display: flex
+    justify-content: space-between
+    padding: 0 0 17px 0
+    font-size: 13px
+    font-family: garamond
+    text-align: right
+    line-height: 1.2
+
+.footer__wrap .header__link  
+    font-size: 13px
+    line-height: 1.2
+    text-align: left
+
+.footer__wrap .header__title 
+    font-size: 13px
+    line-height: 1.2
+    text-align: left
+
+.footer__text
+    font-size: 13px
+    font-family: garamond
+    text-align: right
+    line-height: 1.2
+  
+    /*Section FOOTER ends*/
+
+
+
+
+
+
+  
