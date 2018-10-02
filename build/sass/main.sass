@@ -178,16 +178,18 @@ h4
 .about
     background-size: cover
     padding: 77px 0 60px 0
-    
+
 .about__wrap 
     border: 1px solid #fcdb75
     position: relative
 
+
 .about .main__titles  
     padding: 8px 25px 6px 
     position: absolute
-    top: -20px
-    right: 41%
+    left: 50%
+    top: -19px
+    transform: translateX(-50%)
 
 .about__title 
     padding: 40px 0 50px
@@ -231,15 +233,20 @@ h4
 
 .menu .main__titles
     position: absolute
-    right: 43%
+    left: 50%
     top: -19%
+    transform: translateX(-50%)
     padding: 7px 38px 6px
 
 .menu__slide
     display: flex
     justify-content: space-between
     flex-flow: row wrap
-    padding: 34px 0 40px !important
+    padding: 34px 0 40px 
+    @media screen and (max-width: 982px)
+        padding: 34px 0 40px 0
+
+
 
 .menu__title
     padding: 38px 0px 28px 0 
@@ -257,17 +264,16 @@ h4
 .menu__titles h2 
     text-align: center
 
-.menu__slide
-    padding: 34px 0 0 0
-
 .menu__card
     display: flex  
     justify-content: space-between
     width: 49%  
     padding: 0 0 17px 0
-    
-.owl-carousel .owl-item img
-    width: auto    
+    @media screen and (max-width: 982px)
+        flex-direction: column
+
+.owl-carousel .owl-item img 
+    width: auto
 
 .menu__description
     background-color: #31241d 
@@ -374,6 +380,9 @@ h4
     color: #141d31
     padding: 21px 0 0 12px
     width: 87%
+    @media screen and (max-width: 999px)
+        width: 67%
+
 
 .news__content h3 
   font-size: 12px
