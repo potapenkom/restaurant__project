@@ -199,8 +199,9 @@ h4
         display: block
         border-bottom: 1px solid  #ffdf78
         position: absolute
-        right: 43.5%
+        left: 50%
         bottom: 18%
+        transform: translateX(-50%)
         width: 100%
         max-width: 125px
 
@@ -217,6 +218,8 @@ h4
     font-family: garamond
     color: #ffffff
     line-height: 1.625
+    @media screen and (max-width: 992px)
+        text-align: center
 
     /*Section ABOUT ends*/
 
@@ -243,10 +246,9 @@ h4
     justify-content: space-between
     flex-flow: row wrap
     padding: 34px 0 40px 
-    @media screen and (max-width: 982px)
-        padding: 34px 0 40px 0
-
-
+    @media screen and (max-width: 508px)
+        flex-direction: column
+        align-items: center
 
 .menu__title
     padding: 38px 0px 28px 0 
@@ -258,9 +260,10 @@ h4
         position: absolute
         max-width: 126px
         width: 100%
-        right: 43.5%
+        left: 50%
         top: 99%
-  
+        transform: translateX(-50%)
+
 .menu__titles h2 
     text-align: center
 
@@ -269,11 +272,13 @@ h4
     justify-content: space-between
     width: 49%  
     padding: 0 0 17px 0
-    @media screen and (max-width: 982px)
+    @media screen and (max-width: 940px)
         flex-direction: column
 
-.owl-carousel .owl-item img 
-    width: auto
+.menu__img
+    width: 100%
+    height: 100%
+    min-width: 241px
 
 .menu__description
     background-color: #31241d 
@@ -293,7 +298,9 @@ h4
         max-width: 213px
 
 .menu__texts
-    padding: 0 0 30px 0        
+    padding: 0 0 30px 0  
+    @media screen and (max-width: 990px)
+        padding: 0 0 15px 0  
 
 .menu__text
   font-size: 16px
@@ -303,8 +310,10 @@ h4
   text-align: left
 
 .menu__links
-    text-align: right
     padding: 0px 19px 0 0px
+    text-align: right
+    @media screen and (max-width: 940px)
+        padding: 0px 19px 15px 0px
 
 .menu__link
     font-size: 18px
@@ -342,9 +351,10 @@ h4
 .news__wrap .main__titles
     padding: 7px 25px 6px
     position: absolute
-    right: 43%
+    left: 50%
     top: -20%
-    
+    transform: translateX(-50%)
+
 .new__title
     padding: 38px 7px 28px 0
     position: relative
@@ -355,14 +365,17 @@ h4
         position: absolute
         width: 100%
         max-width: 127px
-        right: 43.5%
+        left: 50%
         bottom: 0
+        transform: translateX(-50%)
 
 .new__title  h2 
     text-align: center  
-
+  
 .news__card
     padding: 34px 0 60px 0
+    width: 100%
+    max-width: 230px
 
 .news .owl-carousel .owl-nav button.owl-prev 
     position: absolute
@@ -373,16 +386,16 @@ h4
     left: 98%
     position: absolute
     top: -13%
-    
+
+.news__img  
+    width: 100%
+    max-width: 230px
+
 .news__content
     position: relative
     background-color: #fff    
     color: #141d31
     padding: 21px 0 0 12px
-    width: 87%
-    @media screen and (max-width: 999px)
-        width: 67%
-
 
 .news__content h3 
   font-size: 12px
@@ -395,8 +408,9 @@ h4
 .news__content .main__titles
     position: absolute   
     top: -8%
-    right: 26%
+    left: 50%
     padding: 5px 8px 5px 11px
+    transform: translateX(-50%)
 
 .news__title
   font-size: 16px
@@ -458,7 +472,6 @@ h4
     line-height: 1.25
     padding: 68px 0px 42px 79px 
 
-
 .contacts__wrap 
     display: flex
     align-items: flex-start  
@@ -489,11 +502,18 @@ h4
 .footer__wrap  
     display: flex
     justify-content: space-between
+    align-items: center
     padding: 0 0 17px 0
     font-size: 13px
     font-family: garamond
     text-align: right
     line-height: 1.2
+    @media screen and (max-width: 590px)
+        flex-direction: column
+
+.footer .header__navbar
+    @media screen and (max-width: 590px)
+        margin: 0 0 5px 0
 
 .footer__wrap .header__link  
     font-size: 13px

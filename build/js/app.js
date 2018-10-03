@@ -55,7 +55,6 @@ $('#second').owlCarousel({
         }
     }
 
-
 });
 
 $('#third').owlCarousel({
@@ -64,20 +63,31 @@ $('#third').owlCarousel({
     navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
     dots: false,
     pagination : false,
+    items : 4,
+    margin: 28,
     responsiveClass:true,
     responsive:{
         0:{
             items:1,
+            margin:5,
             nav:false
         },
-        999:{
-            items:3,
-            autoWidth:false,   
-            center: true     
+        498:{
+            items:2,
+            margin:10,
+            nav: false,
+
         },
+
+        748:{
+            items:3,
+            margin:10,
+            nav: false,
+
+        },
+
         1000:{
             items:4,
-            autoWidth:false,
         }
     }
 
