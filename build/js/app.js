@@ -9,10 +9,17 @@ $('#first').owlCarousel({
     responsive:{
         0:{
             items:1,
-            nav:false
+            nav:false,
+            dots: false,
         },
         600:{
             items:1,
+            dots: false,
+            autoWidth:false,        
+        },
+        945:{
+            items:1,
+            dots: false,
             autoWidth:false,        
         },
         1000:{
@@ -35,19 +42,21 @@ $('#second').owlCarousel({
     responsive:{
         0:{
             items:1,
+            margin: 5,
             nav:false
         },
-        982:{
+        622:{
             items:1,
-            autoWidth:false,   
-            nav :false,
-            margin: 5
+            autoWidth:false, 
+            margin: 5,  
+            nav :true
         },
 
         999:{
             items:1,
-            autoWidth:false,   
-            nav :false
+            autoWidth:false,  
+            margin: 5, 
+            nav :true
         },
         1000:{
             items:1,
@@ -76,13 +85,16 @@ $('#third').owlCarousel({
             items:2,
             margin:10,
             nav: false,
-
+        },
+        622:{
+            items:2, 
+            nav: true
         },
 
         748:{
             items:3,
             margin:10,
-            nav: false,
+            nav: true,
 
         },
 
